@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="quiz.ico" class="icon"> <!-- Onde tirei a imagem icom "<a href="https://iconscout.com/icons/quiz" class="text-underline font-size-sm" target="_blank">Quiz</a> by <a href="https://iconscout.com/contributors/yogswpy" class="text-underline font-size-sm" target="_blank">Widyatmoko P.Y</a>"-->
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Test</title>
+</head>
+
+<body>
+    <section class="todosCaixotes1">
+        <div class="caixote">
+            <div class="h3">
+                <h3>Está pronto para o desafio???</h3>
+            </div>
+            <div class="botoes">
+                <button class="btnCaixote sim" onclick="estouPronto(), colocarPergunta()">SIM</button>
+                <button class="btnCaixote nao" onclick="temCerteza()">NÃO</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="todosCaixotes2">
+        <div class="caixote">
+            <h3>Você perdeu todas as suas chances!</h3>
+            <button class="btnCaixoteDenovo" onclick="denovo()">Recomeçar</button>
+        </div>
+    </section>
+
+    <section class="chanceCaixa">
+        <!-- local das chances -->
+    </section>
+
+    <section class="quizzCaixaFlex">
+        <!-- local das perguntas -->
+    </section>
+
+    <section class="caixaAvaliacao">
+        <div class="caixoteAvaliacao">
+            <h4>Obrigado pela avaliação!</h4>
+            <div class="avali">
+                <!-- local estrelas -->
+            </div>
+        </div>
+    </section>
+</body>
+<script src="main.js"></script>
+
+</html>
