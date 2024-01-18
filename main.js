@@ -20,7 +20,7 @@ const perguntas = [
             <a href="#" class="pular" onclick="pulouPergunta()">Pular pergunta.</a>
         </div>`,
         `<div class="quizzCaixa">
-            <h2>Quantos litros de sangue uma pesoa tem?</h2>
+            <h2>Quantos litros de sangue uma pessoa tem?</h2>
             <div class="respostasCaixa">
                 <button class="btnResposta acertou" onclick="acertou()">4 a 6</button>
                 <button class="btnResposta errou" onclick="errou()">7 a 9</button>
