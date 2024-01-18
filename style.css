@@ -15,6 +15,10 @@
     background: rgba(224, 224, 224, 0.87);
 }
 
+img {
+    width: 20%;
+}
+
 .todosCaixotes2 {
     position: absolute;
     display: none;
@@ -36,6 +40,9 @@
 }
 
 .caixoteAvaliacao {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
     width: 50%;
     height: 60%;
@@ -44,6 +51,9 @@
 }
 
 .caixote {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
     width: 50%;
     height: 60%;
@@ -53,18 +63,17 @@
 
 h3 {
     font-size: 2em;
-    margin: 2em auto 4em;
+    margin: 0 1em 1.5em;
 }
 
 h4 {
     font-size: 3em;
-    margin: 2em auto 1em;
+    margin: 10px auto;
     cursor: default;
 }
 
 .btnCaixote {
     padding: 2em 4em;
-    margin: auto 2em;
     border: none;
     border-radius: 15px;
     background-color: rgb(138, 247, 210);
@@ -73,7 +82,8 @@ h4 {
 }
 
 .btnCaixoteDenovo {
-    padding: 1.4em 1.8em;
+    padding: 1.5em;
+    margin: 1em auto;
     border: none;
     border-radius: 15px;
     background-color: rgb(138, 247, 210);
@@ -149,3 +159,126 @@ h2 {
     cursor: default;
 }
 
+.botoes {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1024px) {
+    .caixote {
+        text-align: center;
+        width: 90%;
+        height: 55%;
+    }
+
+    .chance {
+        font-size: 2em;
+    }
+
+    img {
+        width: 30%;
+    }
+
+    h3 {
+        font-size: 300%;
+    }
+
+    h4 {
+        font-size: 3em;
+    }
+
+    .respostasCaixa {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 1em;
+    }
+
+    h2 {
+        font-size: 3em;
+        margin: 5px 10px;
+    }
+
+    .btnCaixote {
+        padding: 8% 10%;
+        font-size: 1.5em;
+    }
+
+    .btnResposta {
+        padding: 1em;
+        font-size: 1.5em;
+        margin: 1em 2em 3em;
+    }
+
+    .pular {
+        font-size: 1.8em;
+    }
+
+    .avaliar {
+        font-size: 2.8em;
+        margin: 1em 0;
+    }
+
+    .estrelas {
+        font-size: 3.8em;
+    }
+
+    .caixoteAvaliacao {
+        text-align: center;
+        width: 90%;
+        height: 74%;
+    }
+
+    .respostaEstrela {
+        font-size: 4em;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .chance {
+        font-size: 1.4em;
+    }
+
+    .respostasCaixa {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 1em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 200%;
+    }
+
+    h4 {
+        font-size: 1.8em;
+        margin: 1em auto 1em;
+        cursor: default;
+    }
+
+    .pular {
+        font-size: 1.5em;
+    }
+
+    .btnCaixote {
+        padding: 8% 10%;
+        font-size: 1.1em;
+    }
+
+    .btnResposta {
+        padding: 1em;
+        font-size: 1.2em;
+        margin: 1em 2em 3em;
+    }
+
+    .respostaEstrela {
+        font-size: 2.4em;
+    }
+}
