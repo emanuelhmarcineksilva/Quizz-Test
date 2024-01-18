@@ -130,9 +130,12 @@ const perguntas = [
             <a href="#" class="pular" onclick="pulouPergunta()">Pular pergunta.</a>
         </div>`,
         `<div class="quizzCaixa">
+            <div class="img">
+                <img src="quiz.ico" alt="Quiz Test">
+            </div>
             <h2>Parabéns!!! Você concluiu o Test Quizz!</h2>
             <p class="avaliar">Avalie-nos</p>
-            <div class="respostasCaixa">
+            <div class="respostasAvaliacao">
                 <a onclick="avaliacao1()" class="estrelas e1">⭐</a>
                 <a onclick="avaliacao2()" class="estrelas e2">⭐</a>
                 <a onclick="avaliacao3()" class="estrelas e3">⭐</a>
@@ -154,7 +157,7 @@ const botoesCaixaPrimaria = document.querySelector('.botoes')
 const caixaDeAvaliacao = document.querySelector('.caixaAvaliacao')
 const obrigadoPelaAvalicao = document.querySelector('.avali')
 
-const outrosBotoes = '<button class="btnCaixote sim" onclick="estouPronto(), colocarPergunta()">SIM</button> <button class="btnCaixote nao" onclick="temCerteza(), desvia(this)" onmouseover="desvia(this)">NÃO</button>';
+const outrosBotoes = '<button class="btnCaixote sim" onclick="estouPronto(), colocarPergunta()">SIM</button> <button class="btnCaixote nao" onclick="desvia(this)" onmouseover="desvia(this)">NÃO</button>';
 
 
 
@@ -198,8 +201,8 @@ function temCerteza() {
 function desvia(botao) {
     const btn = botao;
     btn.style.position = 'absolute';
-    btn.style.bottom = numeroAleatorio(10, 90);
-    btn.style.left = numeroAleatorio(10, 90);
+    btn.style.bottom = numeroAleatorio(15, 90);
+    btn.style.left = numeroAleatorio(0, 78);
 }
 
 function numeroAleatorio(min, max) {
