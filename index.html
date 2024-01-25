@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="quiz.ico" class="icon"> <!-- Onde tirei a imagem icom "<a href="https://iconscout.com/icons/quiz" class="text-underline font-size-sm" target="_blank">Quiz</a> by <a href="https://iconscout.com/contributors/yogswpy" class="text-underline font-size-sm" target="_blank">Widyatmoko P.Y</a>"-->
+    <link rel="icon" type="image/png" href="quiz.ico" class="icon">
+    <!-- Onde tirei a imagem icom "<a href="https://iconscout.com/icons/quiz" class="text-underline font-size-sm" target="_blank">Quiz</a> by <a href="https://iconscout.com/contributors/yogswpy" class="text-underline font-size-sm" target="_blank">Widyatmoko P.Y</a>"-->
     <link rel="stylesheet" href="style.css">
     <title>Quiz Test</title>
 </head>
@@ -22,7 +23,7 @@
                 <h3>Está pronto para o desafio???</h3>
             </div>
             <div class="botoes">
-                <button class="btnCaixote sim" onclick="estouPronto(), colocarPergunta()">SIM</button>
+                <button class="btnCaixote sim" onclick="estouPronto()">SIM</button>
                 <button class="btnCaixote nao" onclick="temCerteza()">NÃO</button>
             </div>
         </div>
@@ -39,9 +40,23 @@
         <!-- local das chances -->
     </section>
 
+    <section class="nivelCaixaFlex">
+        <section class="nivel">
+            <h5>Escolha o nivel das perguntas.</h5>
+            <div class="respostasCaixa">
+                <button class="btnNivel facil" onclick="perguntasFaceis(), homeAparecer()">Fácil</button>
+                <button class="btnNivel medio" onclick="perguntasMedias(), homeAparecer()">Médio</button>
+                <button class="btnNivel dificil" onclick="perguntasDificeis(), homeAparecer()">Difícil</button>
+                <button class="btnNivel extremo" onclick="perguntasExtremas(), homeAparecer()">Extremo</button>
+            </div>
+        </section>
+    </section>
+
     <section class="quizzCaixaFlex">
         <!-- local das perguntas -->
     </section>
+
+    
 
     <section class="caixaAvaliacao">
         <div class="caixoteAvaliacao">
@@ -53,6 +68,10 @@
                 <!-- local estrelas -->
             </div>
         </div>
+    </section>
+
+    <section class="homeCaixa">
+        <a onclick="denovo()"><img src="home.png" alt="" class="home"></a> 
     </section>
 </body>
 <script src="main.js"></script>
