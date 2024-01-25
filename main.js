@@ -314,7 +314,7 @@ const perguntasDificil = [
             <a href="#" class="pular" onclick="pulouPergunta()">Pular pergunta.</a>
         </div>`,
     `<div class="quizzCaixa">
-            <h2>Qual alternativa indica corretamente o π (pi) até a 5 casa decimal?</h2>
+            <h2>Qual alternativa indica corretamente o π (pi) até a 5° casa decimal?</h2>
             <div class="respostasCaixa">
                 <button class="btnResposta errou" onclick="errou()">3,14169</button>
                 <button class="btnResposta errou" onclick="errou()">3,14137</button>
