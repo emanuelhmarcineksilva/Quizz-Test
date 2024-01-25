@@ -608,6 +608,7 @@ const outrosBotoes = '<button class="btnCaixote sim" onclick="estouPronto()">SIM
 
 function estouPronto() {
     todosCaixotes1.style.display = 'none';
+    nivelCaixa.style.display = 'flex';
 }
 
 //////// certeza
@@ -762,26 +763,31 @@ function avaliacao1() {
     caixaDeAvaliacao.style.display = 'flex'
     perguntaLocal.style.display = 'none'
     obrigadoPelaAvalicao.innerHTML = `<p class="respostaEstrela">⭐</p>`;
+    homeAparecer()
 }
 function avaliacao2() {
     caixaDeAvaliacao.style.display = 'flex'
     perguntaLocal.style.display = 'none'
     obrigadoPelaAvalicao.innerHTML = `<p class="respostaEstrela">⭐⭐</p>`;
+    homeAparecer()
 }
 function avaliacao3() {
     caixaDeAvaliacao.style.display = 'flex'
     perguntaLocal.style.display = 'none'
     obrigadoPelaAvalicao.innerHTML = `<p class="respostaEstrela">⭐⭐⭐</p>`;
+    homeAparecer()
 }
 function avaliacao4() {
     caixaDeAvaliacao.style.display = 'flex'
     perguntaLocal.style.display = 'none'
     obrigadoPelaAvalicao.innerHTML = `<p class="respostaEstrela">⭐⭐⭐⭐</p>`;
+    homeAparecer()
 }
 function avaliacao5() {
     caixaDeAvaliacao.style.display = 'flex'
     perguntaLocal.style.display = 'none'
     obrigadoPelaAvalicao.innerHTML = `<p class="respostaEstrela">⭐⭐⭐⭐⭐</p>`;
+    homeAparecer()
 }
 
 
